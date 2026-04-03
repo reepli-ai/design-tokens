@@ -1,0 +1,41 @@
+/* Reepli.ai Design Tokens - CSS Custom Properties
+   Import in any project: @import "@reepli-ai/design-tokens/css"; */
+
+:root {
+  /* Colors */
+  --color-green: #0F1B2D;
+  --color-green-mid: #1A2D45;
+  --color-lime: #25D366;
+  --color-ivory: #f5f0e8;
+  --color-warm-white: #F8F5EF;
+  --color-muted: #7A9E8A;
+  --color-text: #1a1a18;
+  --color-card-bg: #ffffff;
+  --color-icon-bg: #E8F7EE;
+  --color-icon-color: #1A7A4A;
+  --color-section-intro: #4A6B58;
+  --color-feature-text: #6A9478;
+  --color-footer-bg: #111710;
+  --color-stars: #f5b83d;
+
+  /* Typography */
+  --font-heading: 'Syne', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+  --font-accent: 'Poppins', sans-serif;
+
+  /* Border Radii */
+  --radius-default: 18px;
+  --radius-sm: 10px;
+  --radius-full: 100px;
+  --radius-card: 18px;
+
+  /* Shadows */
+  --shadow-card-hover: 0 8px 32px rgba(15,27,45,0.08);
+  --shadow-plan-hover: 0 12px 44px rgba(15,27,45,0.1);
+  --shadow-popular: 0 20px 60px rgba(15,27,45,0.25);
+  --shadow-nav: 0 2px 20px rgba(15,27,45,0.1);
+
+  /* Spacing */
+  --spacing-section-x: 5%;
+  --spacing-section-y: 100px;
+}

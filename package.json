@@ -1,0 +1,26 @@
+{
+  "name": "@reepli-ai/design-tokens",
+  "version": "1.0.0",
+  "description": "Reepli.ai shared design tokens - colors, typography, spacing, radii, shadows",
+  "main": "tokens.json",
+  "exports": {
+    ".": "./tokens.json",
+    "./tokens": "./tokens.json",
+    "./tailwind": "./tailwind-preset.js",
+    "./css": "./css-variables.css"
+  },
+  "files": [
+    "tokens.json",
+    "tailwind-preset.js",
+    "css-variables.css"
+  ],
+  "keywords": ["design-tokens", "reepli", "tailwind", "css"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reepli-ai/design-tokens.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
+}
