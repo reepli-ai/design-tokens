@@ -1,5 +1,5 @@
 {
-  "name": "@reepli-ai/design-tokens",
+  "name": "reepli-ai-design-tokens",
   "version": "1.1.0",
   "description": "Reepli.ai shared design tokens - colors, typography, spacing, radii, shadows",
   "main": "tokens.json",
