@@ -34,8 +34,15 @@ module.exports = {
   color: var(--color-green);
   font-family: var(--font-heading);
   border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card-hover);
 }
 ```
+
+> **Note Turbopack / Next.js 16** : Turbopack ne resout pas les `@import` depuis `node_modules`. Dans le dashboard, on copie le fichier avant le build :
+> ```bash
+> cp node_modules/reepli-ai-design-tokens/css-variables.css app/design-tokens.css
+> ```
+> Puis `@import "./design-tokens.css";` dans `globals.css`.
 
 ### Raw JSON
 
@@ -60,6 +67,10 @@ console.log(tokens.colors.lime); // '#25D366'
 | `card-bg` | `#ffffff` | Card backgrounds |
 | `icon-bg` | `#E8F7EE` | Icon backgrounds |
 | `icon-color` | `#1A7A4A` | Icon color |
+| `section-intro` | `#4A6B58` | Section intro text |
+| `feature-text` | `#6A9478` | Feature descriptions |
+| `footer-bg` | `#111710` | Footer background |
+| `stars` | `#f5b83d` | Star ratings |
 
 ### Typography
 
@@ -77,6 +88,21 @@ console.log(tokens.colors.lime); // '#25D366'
 | `sm` | 10px |
 | `full` | 100px |
 | `card` | 18px |
+
+### Shadows
+
+| Token | Value | Usage |
+|-------|-------|-------|
+| `card-hover` | `0 8px 32px rgba(15,27,45,0.08)` | Card hover effect |
+| `plan-hover` | `0 12px 44px rgba(15,27,45,0.1)` | Plan card hover |
+| `popular` | `0 20px 60px rgba(15,27,45,0.25)` | Popular plan highlight |
+| `nav` | `0 2px 20px rgba(15,27,45,0.1)` | Navigation shadow |
+
+## CI / Publish
+
+Le package est publie automatiquement sur [npmjs.com](https://www.npmjs.com/package/reepli-ai-design-tokens) via GitHub Actions quand un fichier source (`tokens.json`, `css-variables.css`, `tailwind-preset.js`, `package.json`) est modifie sur `main`.
+
+Le secret `NPM_TOKEN` doit etre configure dans Settings > Secrets > Actions.
 
 ## License
 
