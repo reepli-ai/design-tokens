@@ -1,6 +1,6 @@
 {
   "name": "@reepli-ai/design-tokens",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Reepli.ai shared design tokens - colors, typography, spacing, radii, shadows",
   "main": "tokens.json",
   "exports": {
@@ -20,8 +20,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/reepli-ai/design-tokens.git"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
   }
 }
