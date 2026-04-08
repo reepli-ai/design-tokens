@@ -12,6 +12,8 @@ Single source of truth for colors, typography, spacing, border radii, and shadow
 npm install reepli-ai-design-tokens
 ```
 
+> Le package est heberge sur **npmjs.com** (registre public). Aucune configuration de registre GitHub Packages n'est necessaire.
+
 ## Usage
 
 ### Tailwind CSS (preset)
@@ -51,6 +53,14 @@ const tokens = require('reepli-ai-design-tokens');
 console.log(tokens.colors.lime); // '#25D366'
 ```
 
+### Google Fonts
+
+Les polices utilisees par les tokens doivent etre chargees dans votre projet. Ajoutez cette ligne dans votre `<head>` :
+
+```html
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+```
+
 ## Tokens
 
 ### Colors
@@ -76,9 +86,9 @@ console.log(tokens.colors.lime); // '#25D366'
 
 | Token | Font |
 |-------|------|
-| `font-heading` | Syne |
-| `font-body` | DM Sans |
-| `font-accent` | Poppins |
+| `font-heading` | Plus Jakarta Sans |
+| `font-body` | Inter |
+| `font-accent` | Plus Jakarta Sans |
 
 ### Border Radii
 

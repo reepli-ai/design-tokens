@@ -1,5 +1,5 @@
 /* Reepli.ai Design Tokens - CSS Custom Properties
-   Import in any project: @import "@reepli-ai/design-tokens/css"; */
+   Import in any project: @import "reepli-ai-design-tokens/css-variables.css"; */
 
 :root {
   /* Colors */
@@ -19,9 +19,9 @@
   --color-stars: #f5b83d;
 
   /* Typography */
-  --font-heading: 'Syne', sans-serif;
-  --font-body: 'DM Sans', sans-serif;
-  --font-accent: 'Poppins', sans-serif;
+  --font-heading: 'Plus Jakarta Sans', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-accent: 'Plus Jakarta Sans', sans-serif;
 
   /* Border Radii */
   --radius-default: 18px;
